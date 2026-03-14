@@ -1,9 +1,7 @@
 package pe.edu.idat.proyecto.gestion.service;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pe.edu.idat.proyecto.gestion.dto.TecnicoDto;
-import pe.edu.idat.proyecto.gestion.model.Cliente;
 import pe.edu.idat.proyecto.gestion.model.Tecnico;
 import pe.edu.idat.proyecto.gestion.repository.TecnicoRepository;
 

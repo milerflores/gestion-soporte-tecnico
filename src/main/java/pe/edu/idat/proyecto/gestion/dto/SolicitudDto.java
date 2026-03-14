@@ -25,10 +25,10 @@ public class SolicitudDto {
     private String prioridad;
 
     @NotNull(message = "El ID del técnico es obligatorio")
-    @Positive(message = "El ID del técnico debe ser un número positivo")
+    @PositiveOrZero(message = "El ID del técnico debe ser un número positivo")
     private Integer idTecnico;
 
     @NotNull(message = "El ID del cliente es obligatorio")
-    @Positive(message = "El ID del cliente debe ser un número positivo")
+    @PositiveOrZero(message = "El ID del cliente debe ser un número positivo")
     private Integer idCliente;
 }

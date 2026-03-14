@@ -53,6 +53,11 @@ public class ClienteController
                                           @Valid @RequestBody ClienteDto clienteDto)
     {
         Cliente cliente = clienteService.update(id, clienteDto);
+
+        if(cliente == null){
+            return ResponseEntity.notFound().build();
+        }
+
         return ResponseEntity.ok(cliente);
     }
 

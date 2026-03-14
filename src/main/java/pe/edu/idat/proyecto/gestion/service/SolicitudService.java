@@ -1,10 +1,7 @@
 package pe.edu.idat.proyecto.gestion.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.idat.proyecto.gestion.dto.ClienteDto;
 import pe.edu.idat.proyecto.gestion.dto.SolicitudDto;
-import pe.edu.idat.proyecto.gestion.model.Cliente;
 import pe.edu.idat.proyecto.gestion.model.Solicitud;
 import pe.edu.idat.proyecto.gestion.repository.ClienteRepository;
 import pe.edu.idat.proyecto.gestion.repository.SolicitudRepository;

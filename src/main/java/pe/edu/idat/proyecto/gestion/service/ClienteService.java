@@ -1,11 +1,8 @@
 package pe.edu.idat.proyecto.gestion.service;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.idat.proyecto.gestion.dto.ClienteDto;
 import pe.edu.idat.proyecto.gestion.model.Cliente;
-import pe.edu.idat.proyecto.gestion.model.Solicitud;
 import pe.edu.idat.proyecto.gestion.repository.ClienteRepository;
 
 import java.util.Date;

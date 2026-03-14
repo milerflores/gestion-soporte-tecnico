@@ -10,6 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TecnicoRepository
 {
     private final Map<Integer, Tecnico> tecnicos = new HashMap<>();
+
     private final AtomicInteger secuencialTecnico = new AtomicInteger();
 
     public Tecnico create(Tecnico tecnico)

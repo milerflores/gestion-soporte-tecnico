@@ -10,6 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ClienteRepository
 {
     private final Map<Integer, Cliente> clientes = new HashMap<>();
+
     private final AtomicInteger secuencialCliente = new AtomicInteger();
 
     public Cliente create(Cliente cliente)
@@ -18,6 +19,7 @@ public class ClienteRepository
         {
             cliente.setIdCliente(secuencialCliente.getAndIncrement());
         }
+
         clientes.put(cliente.getIdCliente(), cliente);
         return cliente;
     }
