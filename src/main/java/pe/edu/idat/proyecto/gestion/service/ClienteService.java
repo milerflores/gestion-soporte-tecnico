@@ -1,5 +1,6 @@
 package pe.edu.idat.proyecto.gestion.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.idat.proyecto.gestion.dto.ClienteDto;
 import pe.edu.idat.proyecto.gestion.model.Cliente;
@@ -12,12 +13,12 @@ import java.util.Optional;
 @Service
 public class ClienteService
 {
+    @Autowired
+    private ClienteRepository clienteRepository;
 
-    private final ClienteRepository clienteRepository;
-
-    private ClienteService(ClienteRepository clienteRepository) {
-        this.clienteRepository = clienteRepository;
-    }
+//    private ClienteService(ClienteRepository clienteRepository) {
+//        this.clienteRepository = clienteRepository;
+//    }
 
     public Cliente create(ClienteDto clienteDto)
     {
